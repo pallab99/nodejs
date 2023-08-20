@@ -1,16 +1,13 @@
-const EventEmitter = require('events');
-
-const event = new EventEmitter();
+const School = require('./school');
 
 const bellRingListener = ({ period, text }) => {
     console.log(`We need to run because ${period} ${text}`);
 };
-//! registered a listener for bellRing event
-event.on('bellRing', bellRingListener);
-
-//! raise an event.Always give a single parameter the callback.If there is multiple parameter send an object
-const obj = {
-    period: 'first',
-    text: 'ended',
+const playFootballListener = () => {
+    console.log('We will play football after the school is finished');
 };
-event.emit('bellRing', obj);
+//! registered a listener for bellRing event
+School.on('bellRing', bellRingListener);
+School.on('playFootball', playFootballListener);
+School.startPeriod();
+School.endPeriod();
