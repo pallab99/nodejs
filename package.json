@@ -1,14 +1,18 @@
 {
   "dependencies": {
+    "eslint-config-prettier": "^9.0.0",
     "nodemon": "^3.0.1"
   },
   "name": "nodejs",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "prettier": "3.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"nodemon app.js"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
