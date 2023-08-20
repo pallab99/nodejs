@@ -10,6 +10,7 @@
     "rules": {
         "no-unused-vars": "warn",
         "no-console": "off",
-        "camelcase": "warn"
+        "camelcase": "warn",
+        "class-methods-use-this": "off"
     }
 }
